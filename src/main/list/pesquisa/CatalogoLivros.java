@@ -51,5 +51,6 @@ public class CatalogoLivros {
 
         System.out.println(catalogo.pesquisaPorAutor("J. R. R. Tolkien"));
         System.out.println(catalogo.pesquisaPorIntervaloDeAno(1900,1950));
+        System.out.println(catalogo.pesquisaPorTitulo("Dom Casmurro"))  ;
     }
 }
