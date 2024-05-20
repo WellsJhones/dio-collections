@@ -46,9 +46,12 @@ public class AgendaEvento {
     public static void main(String[] args) {
 
         AgendaEvento agenda = new AgendaEvento();
-        agenda.adicionar(LocalDate.now(), new Evento("Teste", "vtc"));
-        agenda.adicionar(LocalDate.now(), new Evento("Teste1", "vtc1"));
-        agenda.adicionar(LocalDate.now(), new Evento("Teste2", "vtc2"));
+        agenda.adicionar(LocalDate.of(2025, 01, 01), new Evento("Teste", "vtc"));
+        agenda.adicionar(LocalDate.of(2022, 01,03), new Evento("Teste1", "vtc1"));
+        agenda.adicionar(LocalDate.of(2022, 01, 05), new Evento("Teste2", "vtc2"));
+        agenda.adicionar(LocalDate.of(2024, 11, 07), new Evento("Teste3", "vtc3"));
+        agenda.adicionar(LocalDate.of(2022, 01, 10), new Evento("Teste4", "vtc4"));
+
 
         agenda.exibirAgenda();
         agenda.obterProximo();
